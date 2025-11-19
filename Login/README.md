@@ -83,7 +83,7 @@ Handles:
 
 ## Screenshots
 
-<img src="Mini front end projects\Login\login page.png" width="400">
+<img src= "https://github.com/Nayana739/Mini-Frontend-Projects/blob/master/output/login%20page.png" width="400">
 
 
 ##  Enhancements
