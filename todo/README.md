@@ -103,7 +103,7 @@ localStorage.setItem('todo_theme_dark', '1' or '0')
 
 ##  Screenshots 
 
-<img src="output\to do.png" width="400">
+<img src="todo\to do.png" width="400">
 
 
 
