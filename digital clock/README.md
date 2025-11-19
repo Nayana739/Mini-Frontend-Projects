@@ -94,7 +94,7 @@ Switch between all features smoothly without reloading the page.
 
 <p align="center">
   <img src= "https://github.com/Nayana739/Mini-Frontend-Projects/blob/master/output/digital%20clock%201.png" width="300">
-  <img src="Mini front end projects\digital clock\digital clock 2.png" width="300">
+  <img src= "https://github.com/Nayana739/Mini-Frontend-Projects/blob/master/output/digital%20clock%202.png" width="300">
 </p>
 
 
