@@ -83,7 +83,7 @@ Handles:
 
 ## Screenshots
 
-<img src="Login\login page.png" width="400">
+<img src="Mini front end projects\Login\login page.png" width="400">
 
 
 ##  Enhancements

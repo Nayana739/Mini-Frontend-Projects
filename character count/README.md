@@ -85,7 +85,7 @@ No dependencies. No frameworks. Works out of the box.
 
 ##  Screenshots
 
-<img src="character count\character count.png"width="400">
+<img src="Mini front end projects\character count\character count.png"width="400">
 
 
 ##  Future Enhancements

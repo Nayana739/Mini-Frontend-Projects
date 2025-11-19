@@ -68,7 +68,7 @@ The logic automatically updates all three temperature units when the user:
 
 ##  Screenshots 
 
-<img src="Temperature converter\temperature convert.png" width="400">
+<img src="Mini front end projects\Temperature converter\temperature convert.png" width="400">
 
 ##  Usage
 

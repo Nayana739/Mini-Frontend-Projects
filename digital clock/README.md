@@ -93,8 +93,8 @@ Switch between all features smoothly without reloading the page.
 ##  Screenshots
 
 <p align="center">
-  <img src="digital clock\digital clock 1.png" width="300">
-  <img src="digital clock\digital clock 2.png" width="300">
+  <img src="Mini front end projects\digital clock\digital clock 1.png" width="300">
+  <img src="Mini front end projects\digital clock\digital clock 2.png" width="300">
 </p>
 
 

@@ -101,7 +101,7 @@ Function("'use strict'; return (expression)")();
 
 ##  Screenshots
 
-<img src="Calculator\calculator.png" width="400">
+<img src="Mini front end projects\Calculator\calculator.png" width="400">
 
 
 ##  Future Enhancements
