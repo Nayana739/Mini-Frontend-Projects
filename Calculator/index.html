@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calculator — Improved</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <div class="calc-card">
+      <header class="calc-header">
+        <h1>Calculator</h1>
+        <div class="controls">
+          <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+        </div>
+      </header>
+
+      <div class="display-wrap">
+        <div id="history" class="history" aria-hidden="true"></div>
+        <input id="display" class="display" readonly aria-label="Calculator display" />
+      </div>
+
+      <div class="buttons-grid" role="group" aria-label="Calculator buttons">
+        <!-- row 1 -->
+        <button class="btn op" data-val="%" title="Percent">%</button>
+        <button class="btn op" data-val="sqrt" title="Square root">√</button>
+        <button class="btn op" data-val="^" title="Power">^</button>
+        <button class="btn op" data-val="back" title="Backspace">⌫</button>
+
+        <!-- row 2 -->
+        <button class="btn" data-val="7">7</button>
+        <button class="btn" data-val="8">8</button>
+        <button class="btn" data-val="9">9</button>
+        <button class="btn op" data-val="/" title="Divide">÷</button>
+
+        <!-- row 3 -->
+        <button class="btn" data-val="4">4</button>
+        <button class="btn" data-val="5">5</button>
+        <button class="btn" data-val="6">6</button>
+        <button class="btn op" data-val="*" title="Multiply">×</button>
+
+        <!-- row 4 -->
+        <button class="btn" data-val="1">1</button>
+        <button class="btn" data-val="2">2</button>
+        <button class="btn" data-val="3">3</button>
+        <button class="btn op" data-val="-" title="Subtract">−</button>
+
+        <!-- row 5 -->
+        <button class="btn" data-val="0">0</button>
+        <button class="btn" data-val=".">.</button>
+        <button class="btn equals" id="equals" data-val="=">=</button>
+        <button class="btn op" data-val="+" title="Add">+</button>
+      </div>
+
+      <div class="bottom-row">
+        <button id="clear" class="clear">C</button>
+        <div class="history-list-wrap">
+          <button id="toggleHistory" class="history-toggle">History</button>
+          <ul id="historyList" class="history-list"></ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

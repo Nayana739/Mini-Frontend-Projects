@@ -1,0 +1,129 @@
+/* ROOT VARIABLES */
+:root {
+    --bg: #eaf5ff;
+    --text: #1e293b;
+    --card: #ffffffcc;
+    --accent: #007bff;
+}
+
+body.dark {
+    --bg: #0f172a;
+    --text: #e2e8f0;
+    --card: #1e293bcc;
+    --accent: #38bdf8;
+}
+
+/* THEMES */
+body.ocean { --bg: #d7f4ff; --accent:#0099cc; }
+body.sunset { --bg:#ffe8d9; --accent:#ff7a21; }
+body.galaxy { --bg:#2b1055; --text:#f3e8ff; --accent:#aa00ff; }
+body.neon { --bg:#000; --text:#0ff; --card:#111; --accent:#0ff; }
+body.white { --bg:#ffffff; --text:#000; --card:#f8f8f8; }
+
+/* LAYOUT */
+body {
+    margin: 0;
+    background: var(--bg);
+    font-family: "Inter", sans-serif;
+    color: var(--text);
+    transition: 0.4s ease;
+}
+
+/* TOP BAR */
+.topbar {
+    padding: 15px 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.top-actions button, select {
+    margin-left:10px;
+    padding:8px 10px;
+    border-radius:8px;
+    border:none;
+    font-size:15px;
+    cursor:pointer;
+}
+
+/* TABS */
+.tabs {
+    display: flex;
+    justify-content:center;
+    gap:10px;
+    margin:20px 0;
+}
+.tab {
+    padding:10px 15px;
+    border:none;
+    background:var(--card);
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:600;
+}
+.tab.active { background: var(--accent); color:white; }
+
+/* CONTENT */
+.content {
+    max-width:600px;
+    margin:auto;
+    padding:20px;
+}
+
+/* CARDS */
+.clock-card, section {
+    background: var(--card);
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:20px;
+    text-align:center;
+    backdrop-filter: blur(12px);
+}
+
+/* FLIP CLOCK STYLE */
+.flip-clock {
+    display:flex;
+    justify-content:center;
+    gap:8px;
+    font-size: 2rem; /* smaller */
+    margin-bottom:20px;
+}
+
+.flip-digit {
+    background:#000;
+    color:#0ff;
+    padding:8px 12px;   /* smaller */
+    border-radius:6px;
+    min-width:40px;     /* smaller */
+    text-align:center;
+    font-weight:bold;
+    box-shadow:0 0 6px #0ff; /* reduced glow */
+    animation: flip 0.5s;
+}
+@keyframes flip { from { transform: rotateX(90deg); opacity:0; } to { transform: rotateX(0); opacity:1; }
+
+/* STOPWATCH */
+#swDisplay {
+    font-size:2.8rem;
+    margin:15px 0;
+}
+.sw-buttons button {
+    margin:5px;
+    padding:10px 15px;
+    border:none;
+    border-radius:8px;
+    background:var(--accent);
+    color:white;
+}
+
+/* TIMER */
+#timerDisplay {
+    font-size:2rem;
+    margin-top:10px;
+}
+
+/* WORLD CLOCK */
+#worldTime {
+    font-size:2rem;
+    font-weight:bold;
+}
+

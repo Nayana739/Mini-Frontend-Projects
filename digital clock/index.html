@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pro Digital Clock</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<div class="topbar">
+    <h2>⏰ Pro Digital Clock</h2>
+    <div class="top-actions">
+        <select id="themeSelect">
+            <option value="default">Default</option>
+            <option value="ocean">Ocean Blue</option>
+            <option value="sunset">Sunset Orange</option>
+            <option value="galaxy">Galaxy Purple</option>
+            <option value="neon">Neon Dark</option>
+            <option value="white">Minimal White</option>
+        </select>
+
+        <button id="themeToggle">🌙</button>
+        <button id="fullscreenBtn">⛶</button>
+    </div>
+</div>
+
+<div class="tabs">
+    <button class="tab active" data-tab="clock">Clock</button>
+    <button class="tab" data-tab="alarm">Alarm</button>
+    <button class="tab" data-tab="stopwatch">Stopwatch</button>
+    <button class="tab" data-tab="timer">Timer</button>
+    <button class="tab" data-tab="world">World Clock</button>
+</div>
+
+<!-- MAIN CONTENTS -->
+
+<div class="content">
+
+    <!-- CLOCK -->
+    <section id="clock" class="tab-content active">
+        <div class="clock-card">
+            <div class="flip-clock" id="flipClock"></div>
+            <div class="clock-info">
+                <p id="ampm"></p>
+                <p id="clockDate"></p>
+            </div>
+
+            <button id="speakTime">🔊 Announce Time</button>
+        </div>
+    </section>
+
+    <!-- ALARM -->
+    <section id="alarm" class="tab-content">
+        <h2>Alarm</h2>
+        <input type="time" id="alarmTime" />
+        <button id="setAlarm">Set Alarm</button>
+        <p id="alarmStatus"></p>
+        <audio id="alarmSound" src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3"></audio>
+    </section>
+
+    <!-- STOPWATCH -->
+    <section id="stopwatch" class="tab-content">
+        <h2>Stopwatch</h2>
+        <div id="swDisplay">00:00:00</div>
+        <div class="sw-buttons">
+            <button id="swStart">Start</button>
+            <button id="swStop">Stop</button>
+            <button id="swReset">Reset</button>
+        </div>
+    </section>
+
+    <!-- TIMER -->
+    <section id="timer" class="tab-content">
+        <h2>Countdown Timer</h2>
+        <input type="number" id="timerInput" placeholder="Enter seconds">
+        <button id="timerStart">Start</button>
+        <button id="timerStop">Stop</button>
+        <h3 id="timerDisplay">00:00</h3>
+    </section>
+
+    <!-- WORLD CLOCK -->
+    <section id="world" class="tab-content">
+        <h2>World Clock</h2>
+
+        <select id="citySelect">
+            <option value="Asia/Kolkata">India (IST)</option>
+            <option value="America/New_York">New York (EST)</option>
+            <option value="Europe/London">London (UK)</option>
+            <option value="Asia/Tokyo">Tokyo (Japan)</option>
+            <option value="Australia/Sydney">Sydney (AUS)</option>
+        </select>
+
+        <h3 id="worldTime"></h3>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

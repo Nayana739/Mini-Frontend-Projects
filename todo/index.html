@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>To-Do — Improved</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <main class="todo-page">
+    <div class="todo-card">
+      <header class="todo-header">
+        <h1>My To-Do</h1>
+        <div class="header-actions">
+          <button id="clearCompleted" title="Clear completed">Clear Done</button>
+          <button id="themeToggle" title="Toggle theme">🌙</button>
+        </div>
+      </header>
+
+      <section class="input-row">
+        <input id="taskInput" type="text" placeholder="Add new task and press Enter" aria-label="New task"/>
+        <button id="addBtn">Add</button>
+      </section>
+
+      <section class="filters">
+        <div class="left">
+          <span id="remaining">0 items left</span>
+        </div>
+        <div class="center">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="active">Active</button>
+          <button class="filter" data-filter="completed">Completed</button>
+        </div>
+        <div class="right">
+          <button id="clearAll">Clear All</button>
+        </div>
+      </section>
+
+      <ul id="taskList" class="task-list" aria-live="polite"></ul>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

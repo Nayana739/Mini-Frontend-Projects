@@ -1,0 +1,98 @@
+:root {
+    --bg: #eaf6ff;
+    --card: #ffffff;
+    --accent: #007bff;
+    --text: #1b1b1b;
+}
+
+body.dark {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --accent: #38bdf8;
+    --text: #e2e8f0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    transition: 0.3s ease;
+}
+
+.container {
+    width: 90%;
+    max-width: 420px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.6rem;
+}
+
+header button {
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.converter-card {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    animation: fadeIn 0.4s ease;
+}
+
+label {
+    font-weight: 600;
+    margin-top: 10px;
+    display: block;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #cfd9e6;
+    font-size: 16px;
+    outline: none;
+    transition: box-shadow 0.2s;
+}
+
+input:focus, select:focus {
+    box-shadow: 0 0 0 2px var(--accent);
+}
+
+.result-box {
+    margin-top: 20px;
+    background: rgba(0, 123, 255, 0.06);
+    padding: 15px;
+    border-radius: 8px;
+    line-height: 1.8;
+    transition: 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 1.3rem;
+    }
+}

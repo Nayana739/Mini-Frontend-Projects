@@ -1,0 +1,52 @@
+:root{
+  --bg: #e9f5ff;
+  --card: #fff;
+  --accent: #0ea5e9;
+  --muted: #6b7280;
+  --radius: 12px;
+  --shadow: 0 10px 30px rgba(15,30,60,0.08);
+}
+body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial;background:linear-gradient(180deg,var(--bg),#f7fbff);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:28px}
+.todo-page{width:100%;max-width:720px;padding:8px}
+.todo-card{background:var(--card);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+.todo-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.todo-header h1{margin:0;font-size:1.4rem}
+.header-actions button{background:transparent;border:0;cursor:pointer;font-size:14px;padding:6px 8px;border-radius:8px}
+.input-row{display:flex;gap:8px;margin-bottom:12px}
+.input-row input{flex:1;padding:12px;border-radius:8px;border:1px solid #e6eef9;font-size:15px;outline:none;transition:box-shadow .12s}
+.input-row input:focus{box-shadow:0 6px 18px rgba(14,165,233,0.12)}
+.input-row button{background:var(--accent);color:white;border:0;padding:10px 14px;border-radius:8px;cursor:pointer}
+
+/* filters */
+.filters{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;gap:12px}
+.filters .center{display:flex;gap:8px}
+.filter{background:transparent;border:1px solid rgba(15,30,60,0.06);padding:6px 10px;border-radius:8px;cursor:pointer}
+.filter.active{background:var(--accent);color:white;border-color:var(--accent)}
+
+/* list */
+.task-list{list-style:none;padding:0;margin:0}
+.task-item{display:flex;align-items:center;gap:12px;padding:10px;border-radius:8px;border:1px solid rgba(10,20,40,0.03);margin-bottom:8px;background:linear-gradient(180deg,#fff,#fbfdff);transition:transform .18s,opacity .18s}
+.task-item.enter{animation:enter .26s ease}
+@keyframes enter{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+.task-item .check{width:20px;height:20px;border-radius:6px;border:1px solid rgba(10,20,40,0.06);display:flex;align-items:center;justify-content:center;cursor:pointer}
+.task-item .check.checked{background:var(--accent);color:white}
+.task-item .text{flex:1}
+.task-item .text.completed{text-decoration:line-through;color:var(--muted)}
+.task-item .actions{display:flex;gap:8px}
+.task-item button{background:transparent;border:0;cursor:pointer}
+
+/* responsive */
+@media (max-width:560px){
+  .todo-card{padding:14px}
+  .filters{flex-direction:column;align-items:flex-start}
+}
+
+/* dark support */
+body.dark{
+  --bg: #071022;
+  --card: #071126;
+  --accent: #4fc3ff;
+  --muted: #8a9bb3;
+  color: #dbefff;
+  background:linear-gradient(180deg,#041022,#08182a);
+}
